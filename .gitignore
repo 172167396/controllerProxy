@@ -1,9 +1,11 @@
 # Compiled class file
 *.class
 .idea
+.mvn/wrapper/maven-wrapper.jar
+.iml
 # Log file
 *.log
-.mvn/wrapper/maven-wrapper.jar
+
 # BlueJ files
 *.ctxt
 
