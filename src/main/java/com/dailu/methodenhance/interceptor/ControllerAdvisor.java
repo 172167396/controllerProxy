@@ -36,7 +36,7 @@ public class ControllerAdvisor extends AbstractPointcutAdvisor implements BeanFa
 
     private Pointcut buildPointcut() {
         Pointcut cpc = new AnnotationMatchingPointcut(ValidAuth.class, true);
-//        AnnotationMatchingPointcut.forClassAnnotation()
+//        AnnotationMatchingPointcut.forClassAnnotation(ValidAuth.class);
         Pointcut mpc = AnnotationMatchingPointcut.forMethodAnnotation(ValidAuth.class);
         return new ComposablePointcut(cpc).union(mpc);
     }

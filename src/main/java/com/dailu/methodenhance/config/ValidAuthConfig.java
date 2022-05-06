@@ -50,6 +50,7 @@ public class ValidAuthConfig implements ImportBeanDefinitionRegistrar {
     }
 
 
+
     //允许Spring扫描接口上的注解
     private ClassPathScanningCandidateComponentProvider getScanner() {
         return new ClassPathScanningCandidateComponentProvider(false) {
